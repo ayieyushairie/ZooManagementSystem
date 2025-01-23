@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Adoption Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Zoo Adoption Program</h1>
+    <form id="adoptionForm" method="POST" action="adoption.php">
+        <label for="animalName">Animal Name:</label>
+        <input type="text" id="animalName" name="animalName" required>
+
+        <label for="adopterName">Your Name:</label>
+        <input type="text" id="adopterName" name="adopterName" required>
+
+        <label for="monthlyFee">Monthly Fee:</label>
+        <input type="number" id="monthlyFee" name="monthlyFee" required>
+
+        <input type="submit" value="Adopt Animal">
+    </form>
+
+    <h2>Adoption Records</h2>
+    <div id="adoptionRecords">
+        <!-- Adoption records will be displayed here -->
+    </div>
+</body>
+</html>
